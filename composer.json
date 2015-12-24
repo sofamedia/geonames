@@ -1,0 +1,25 @@
+{
+	"name" : "geonames/client",
+	"description" : "Geonames API library",
+	"keywords" : ["api", "geonames"],
+	"type" : "library",
+	"license" : "MIT",
+	"authors" : [
+		{
+			"name": "Andre Figueira",
+			"email": "andre.figueira@me.com"
+		}
+	],
+	"require" : {
+		"guzzlehttp/guzzle": "~6.0",
+		"php" : ">=5.6"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Geonames\\" : "src/Geonames/"
+		}
+	},
+	"support" : {
+		"email" : "andre.figueira@me.com"
+	}
+}
