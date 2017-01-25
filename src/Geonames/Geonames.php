@@ -241,6 +241,10 @@ class Geonames
 		// remove useless root property, to make the result more user friendly
 		if ($this->endpoints[$endpoint] !== false && is_object($ret)) {
 			$prop = $this->endpoints[$endpoint];
+			if (!property_exists($ret, $prop)) {
+				return array();
+			}
+
 			$ret = $ret->$prop;
 		}
 
